@@ -1,0 +1,192 @@
+li {
+    list-style-type: none;
+}
+
+
+.header {
+    padding-top: 25px;
+    padding-bottom: 20px;
+
+}
+
+.header__fixed-container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header__flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logotip {
+    display: inline-block;
+
+}
+
+.logo {
+    display: inline-block;
+    height: 45px;
+    width: 30px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.logo-name {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+.pinball {
+    font-family: "OpenSans";
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    font-size: 35px;
+    color: #363636;
+    line-height: 1em;
+    max-width: 300px;
+}
+
+.theme {
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-size: 15px;
+    color: #503737;
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+
+}
+
+.foto img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.theme3 {
+    display: inline-block;
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-size: 15px;
+    color: #8c8c8c;
+    right: 28px;
+    margin-left: 13px;
+}
+
+.logOff {
+    color: #e77161;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.comeIn {
+    background-color: #48b4ce;
+    color: #fff;
+    width: auto;
+    height: 34px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+/*навигация*/
+.menu-container {
+    display: flex;
+    font-size: 16px;
+    margin-left: 366px;
+    padding-bottom: 15px;
+    flex-basis: 1000px;
+    align-items: center;
+}
+
+.menu-container a {
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-size: 15px;
+    color: #8c8c8c;
+}
+
+.menu-container li::after {
+    margin-left: 16px;
+    margin-right: 50px;
+    color: #b7b7b9;
+}
+
+.menu-container ul {
+    display: block;
+}
+
+@media screen and (max-width: 1199px) {
+    .header__fixed-container {
+        width: 770px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header__fixed-container {
+        width: 490px;
+    }
+
+    .logo {
+        height: 32px;
+        width: 20px;
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+
+    .pinball {
+        font-size: 30px;
+        color: #363636;
+        line-height: 1em;
+    }
+
+    .theme {
+        font-size: 12px;
+    }
+
+    .foto img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__fixed-container {
+        width: 320px;
+    }
+
+    .pinball {
+        display: none;
+    }
+
+    .theme {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    .comeIn {
+        margin-right: 30px;
+    }
+
+    .logOff {
+        margin-right: 30px;
+    }
+
+
+}

@@ -1,0 +1,30 @@
+.skils-section {
+    background-color: #f0efee;
+    position: relative;
+    border-top: 1px solid #d6d5d4;
+}
+
+.skils-section__fixed-container {
+    width: 1070px;
+    margin: 0 auto;   
+    padding-top: 45px;
+}
+
+@media screen and (max-width: 1199px) {
+    .skils-section__fixed-container {
+        width: 810px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .skils-section__fixed-container {
+        width: 560px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .skils-section__fixed-container {
+        width: 290px;
+        padding-top: 20px;
+    }
+}

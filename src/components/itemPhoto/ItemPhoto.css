@@ -1,0 +1,81 @@
+.photo { 
+    width: 240px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #d6d5d4;
+    border-radius: 5px;
+}
+
+.photo_item {
+    width: 100%;
+    height: auto;
+}
+
+.photo_profile {
+    padding-top: 10px;
+    padding-left: 18px;
+}
+
+.photo_profile-link {
+    color: #717171;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+
+.avatar1 {
+    width: 25px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.photo_date {
+    padding-top: 15px;
+    padding-left: 18px;
+    color: #acaaaa;
+    font-size: 13px;
+}
+
+.photo_like {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 15px;    
+}
+
+.photo_like-button {
+    color: #acaaaa;
+    font-size: 13px;
+    background-color: white;
+    border: none;        
+}
+
+.photo_like-button i {
+    color: #acaaaa;
+    font-size: 13px;
+    padding-right: 5px;
+}
+
+.like i {
+    color: red;
+}
+
+@media screen and (max-width: 767px) {
+    .photo { 
+    width: 260px;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #d6d5d4;
+    border-radius: 5px;
+}
+
+    
+}
+
+
+

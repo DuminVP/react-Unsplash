@@ -1,0 +1,152 @@
+html, body {
+    box-sizing: border-box; /*изменения алгоритма расчета ширины и высоты элемента*/
+    min-height: 100%;
+    width: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit; /*блочная модель css*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100%;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+    line-height: 1.429;
+    color: black;
+    overflow-x: hidden; /*отображение содержания блочного элемента по горизонтали*/
+    opacity: 1;	/*прозрачность элемента*/
+    -webkit-font-smoothing: antialiased; /* средняя степень сглаживания шрифта -webkit- для Chrome и Safari*/
+    -moz-osx-font-smoothing: grayscale; /*-moz- для Firefox*/
+    -webkit-text-size-adjust: none; /* нет контроля размеров шрифта -moz- для Firefox*/
+}
+
+body.modal-active {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    outline: none;
+    transition: .25s ease;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a::before{
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    transition: width .3s ease-in-out, left .3s ease-in-out;
+    left: 50%;
+    bottom: 0;
+    
+}
+
+a::after{
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    transition: width .3s ease-in-out;
+    left: 50%;
+    bottom: 0;
+    
+}
+
+a:hover::before{
+    width: 50%;
+    left: 0;
+}
+
+a:hover::after{
+    width: 50%;
+}
+
+a:-moz-any-link:focus ,
+a:-moz-focusring,
+a::-moz-focus-inner,
+a::-moz-focus-outer {
+    outline: 0!important;
+    outline: none;
+}
+
+a:active {outline: none;}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 16px; /* размер шрифта */
+    font-weight: bold; /* жирность шрифта */
+    max-width: 90px; /* размер блока */
+
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+  /*typographyc*/
+ol,ul,li,h1,h2,h3,h4,h5,h6,p,q,figure,figcaption,blockquote,cite,fieldset,hr {    
+    margin:0;
+    padding: 0;    
+    border: none;
+}
+
+ul li, ol li{list-style: none;}  
+  
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+
+
+
